@@ -55,6 +55,7 @@ struct DistanceInputView: View {
                 }
                 VStack {
                     Button(action: {
+                        // TODO: - 거리 저장 후, 설정 화면으로 이동
                         print()
                     }) {
                         Image(systemName: "checkmark")

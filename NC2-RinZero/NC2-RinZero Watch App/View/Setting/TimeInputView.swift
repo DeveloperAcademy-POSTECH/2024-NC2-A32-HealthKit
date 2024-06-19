@@ -42,6 +42,7 @@ struct TimeInputView: View {
                     }
                     VStack {
                         Button(action: {
+                            // TODO: - 시간 저장 후, 설정 화면으로 이동
                             print()
                         }) {
                             Image(systemName: "checkmark")
