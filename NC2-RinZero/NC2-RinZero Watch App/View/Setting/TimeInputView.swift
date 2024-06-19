@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TimeInputView: View {
+    @Environment(\.dismiss) var dismiss
+    
 //    @State private var selectedHour = 0
 //    @State private var selectedMinute = 0
     @Binding var selectedHour: Int
@@ -45,6 +47,7 @@ struct TimeInputView: View {
                     VStack {
                         Button(action: {
                             // TODO: - 시간 저장 후, 설정 화면으로 이동
+                            dismiss()
                             print("\(selectedHour)")
                             print("\(selectedMinute)")
                         }) {

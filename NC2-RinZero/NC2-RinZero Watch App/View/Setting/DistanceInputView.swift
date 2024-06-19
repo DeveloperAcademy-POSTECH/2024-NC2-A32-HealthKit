@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DistanceInputView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @Binding var selectedDistance : Int
     
     let numbers = Array(1...100)
@@ -56,6 +58,7 @@ struct DistanceInputView: View {
                 VStack {
                     Button(action: {
                         // TODO: - 거리 저장 후, 설정 화면으로 이동
+                        dismiss()
                         print("\(selectedDistance)")
                     }) {
                         Image(systemName: "checkmark")
