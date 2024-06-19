@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DistanceInputView: View {
-    @State private var selectedNumber = 1
+    @Binding var selectedDistance : Int
     
     let numbers = Array(1...100)
     
@@ -17,7 +17,7 @@ struct DistanceInputView: View {
         VStack {
             VStack {
                 VStack {
-                    Picker("Distance", selection: $selectedNumber) {
+                    Picker("Distance", selection: $selectedDistance) {
                         ForEach(numbers, id: \.self) { number in
                             Text("\(number)").tag(number)
                                 .foregroundStyle(.white)
@@ -55,7 +55,8 @@ struct DistanceInputView: View {
                 }
                 VStack {
                     Button(action: {
-                        print()
+                        // TODO: - 거리 저장 후, 설정 화면으로 이동
+                        print("\(selectedDistance)")
                     }) {
                         Image(systemName: "checkmark")
                             .font(.headline)
@@ -69,11 +70,3 @@ struct DistanceInputView: View {
         .padding(.top, 20)
     }
 }
-
-
-struct DistanceInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        DistanceInputView()
-    }
-}
-
