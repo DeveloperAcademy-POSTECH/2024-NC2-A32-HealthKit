@@ -11,7 +11,7 @@ struct AvgPaceView: View {
     var body: some View {
         VStack {
             ZStack {
-                Image("Frame 18")
+                Image("BackgroundSymbol")
                     .resizable()
                     .frame(width: 250, height: 250)
                 VStack{

@@ -10,7 +10,7 @@ import SwiftUI
 struct StartView: View {
     var body: some View {
         ZStack {
-            Image("Frame 18")
+            Image("BackgroundSymbol")
                 .resizable()
                 .frame(width: 250, height: 250)
             Text("START")
