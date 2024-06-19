@@ -22,7 +22,8 @@ struct DistanceInputView: View {
                     Picker("Distance", selection: $selectedDistance) {
                         ForEach(numbers, id: \.self) { number in
                             Text("\(number)").tag(number)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(number == selectedDistance ? .pink : .white)
+                                .font(.system(size: 24))
                         }
                     }
                     .foregroundStyle(Color.pink)
