@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var selectedDistance = UserDefaults.standard.integer(forKey: "selectedDistance")
+    @State private var selectedHour = UserDefaults.standard.integer(forKey: "selectedHour")
+    @State private var selectedMinute = UserDefaults.standard.integer(forKey: "selectedMinute")
+    
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink(destination: SettingsView()) {
+                NavigationLink(destination: SettingsView(selectedDistance: $selectedDistance, selectedHour: $selectedHour, selectedMinute: $selectedMinute)) {
                     Image(systemName: "gearshape")
                         .resizable()
                         .scaledToFit()

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var selectedDistance = UserDefaults.standard.integer(forKey: "selectedDistance")
-    @State private var selectedHour = UserDefaults.standard.integer(forKey: "selectedHour")
-    @State private var selectedMinute = UserDefaults.standard.integer(forKey: "selectedMinute")
+    @Binding var selectedDistance: Int
+    @Binding var selectedHour: Int
+    @Binding var selectedMinute: Int
     
     var body: some View {
         NavigationStack {
@@ -55,8 +55,4 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
     }
-}
-
-#Preview {
-    SettingsView()
 }
