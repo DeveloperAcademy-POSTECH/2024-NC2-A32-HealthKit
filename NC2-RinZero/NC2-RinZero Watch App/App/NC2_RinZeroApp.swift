@@ -11,7 +11,7 @@ import SwiftUI
 struct NC2_RinZero_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
         }
     }
 }
