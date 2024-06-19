@@ -25,6 +25,10 @@ struct TimeInputView: View {
 //                Text("Selected time: \(String(format: "%02d", selectedHour)):\(String(format: "%02d", selectedMinute))")
 //                    .font(.headline)
 //                    .padding(.bottom,30)
+                // MARK: - padding보다는 Spacer로 주는 게 좋을 듯 해서 변경했어유 .. ㅎㅎ
+                Spacer()
+                
+                // TODO: - VStack과 padding 값 없애고 Spacer() 사용 ~
                 HStack {
                     VStack {
                         Button(action: {
@@ -47,7 +51,6 @@ struct TimeInputView: View {
                     }
                     .padding(.leading, 40)
                 }
-                .padding(.top, 10)
             }
         }
 //            .navigationTitle("Time")
@@ -81,7 +84,10 @@ struct CustomPicker: View {
                 }
             }
             .pickerStyle(.wheel)
-            //.frame(width: 80, height: 140) // Picker의 너비와 높이 조정
+            // TODO: - picker 너비 조정 ? 확인하기 ~
+            // MARK: - 높이는 Hour랑 NavigationBackbutton이랑 겹쳐서 조정했어유
+            .frame(height: 100)
+            // Picker의 너비와 높이 조정
             .clipped()
         }
     }
