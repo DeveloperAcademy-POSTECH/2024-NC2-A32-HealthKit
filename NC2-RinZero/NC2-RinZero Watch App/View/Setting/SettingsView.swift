@@ -8,47 +8,46 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var selectedDistance = UserDefaults.standard.integer(forKey: "selectedDistance")
+    @State private var selectedHour = UserDefaults.standard.integer(forKey: "selectedHour")
+    @State private var selectedMinute = UserDefaults.standard.integer(forKey: "selectedMinute")
+    
     var body: some View {
-        
-        
-        
         NavigationStack {
             List {
-                NavigationLink(destination: DistanceInputView()) {
+                NavigationLink(destination: DistanceInputView(selectedDistance: $selectedDistance)) {
                     HStack {
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text("Distance")
                                 .font(.system(size: 12))
                                 .opacity(0.5)
-                                .padding(.trailing, 10)
-                            Text("5km")
-                                .font(.system(size: 35))
+                            Text("\(selectedDistance)km")
+                                .font(.system(size: 30))
                         }
-                        .padding()
+                        Spacer()
                         Image(systemName: "chevron.forward")
                             .resizable()
                             .frame(width: 10, height: 20)
                             .opacity(0.5)
-                            .padding(.leading, 60)
                     }
+                    .padding()
                 }
-                NavigationLink(destination: TimeInputView()) {
+                NavigationLink(destination: TimeInputView(selectedHour: $selectedHour, selectedMinute: $selectedMinute)) {
                     HStack {
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text("Time")
                                 .font(.system(size: 12))
                                 .opacity(0.5)
-                                .padding(.trailing, 60)
-                            Text("30min")
-                                .font(.system(size: 35))
+                            Text("\(selectedHour)시간 \(selectedMinute)분")
+                                .font(.system(size: 30))
                         }
-                        .padding()
+                        Spacer()
                         Image(systemName: "chevron.forward")
                             .resizable()
                             .frame(width: 10, height: 20)
                             .opacity(0.5)
-                            .padding(.leading, 30)
                     }
+                    .padding()
                 }
             }
             .listStyle(CarouselListStyle())

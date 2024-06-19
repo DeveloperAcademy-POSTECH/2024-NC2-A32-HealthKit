@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct TimeInputView: View {
-    @State private var selectedHour = 0
-    @State private var selectedMinute = 0
+//    @State private var selectedHour = 0
+//    @State private var selectedMinute = 0
+    @Binding var selectedHour: Int
+    @Binding var selectedMinute: Int
     
     let hours = Array(0...23)
     let minutes = Array(0...59) 
@@ -43,7 +45,8 @@ struct TimeInputView: View {
                     VStack {
                         Button(action: {
                             // TODO: - 시간 저장 후, 설정 화면으로 이동
-                            print()
+                            print("\(selectedHour)")
+                            print("\(selectedMinute)")
                         }) {
                             Image(systemName: "checkmark")
                                 .font(.headline)
@@ -91,11 +94,5 @@ struct CustomPicker: View {
             // Picker의 너비와 높이 조정
             .clipped()
         }
-    }
-}
-
-struct TimeInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimeInputView()
     }
 }
