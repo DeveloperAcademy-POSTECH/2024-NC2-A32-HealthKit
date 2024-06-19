@@ -12,6 +12,14 @@
 		09B66EE42C21716D0070BF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B66EE32C21716D0070BF4A /* Assets.xcassets */; };
 		09B66EE72C21716D0070BF4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B66EE62C21716D0070BF4A /* Preview Assets.xcassets */; };
 		09B66EF52C2175B90070BF4A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B66EF42C2175B90070BF4A /* Color.swift */; };
+		DF09B9B12C2317FF001FD6D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B02C2317FF001FD6D5 /* MainView.swift */; };
+		DF09B9B32C231836001FD6D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B22C231836001FD6D5 /* SettingsView.swift */; };
+		DF09B9B52C23193A001FD6D5 /* DistanceInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B42C23193A001FD6D5 /* DistanceInputView.swift */; };
+		DF09B9B72C231948001FD6D5 /* TimeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B62C231948001FD6D5 /* TimeInputView.swift */; };
+		DF09B9B92C2319F0001FD6D5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B82C2319F0001FD6D5 /* StartView.swift */; };
+		DF09B9BB2C2319FF001FD6D5 /* AvgPaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */; };
+		DF09B9BD2C231A0E001FD6D5 /* EndPauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */; };
+		DF09B9BF2C231A1F001FD6D5 /* EndResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		09B66EE32C21716D0070BF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09B66EE62C21716D0070BF4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09B66EF42C2175B90070BF4A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DF09B9B02C2317FF001FD6D5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DF09B9B22C231836001FD6D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DF09B9B42C23193A001FD6D5 /* DistanceInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceInputView.swift; sourceTree = "<group>"; };
+		DF09B9B62C231948001FD6D5 /* TimeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInputView.swift; sourceTree = "<group>"; };
+		DF09B9B82C2319F0001FD6D5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPaceView.swift; sourceTree = "<group>"; };
+		DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPauseView.swift; sourceTree = "<group>"; };
+		DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndResumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				09B66EE12C21716C0070BF4A /* ContentView.swift */,
+				DF09B9B02C2317FF001FD6D5 /* MainView.swift */,
+				DF09B9B22C231836001FD6D5 /* SettingsView.swift */,
+				DF09B9B42C23193A001FD6D5 /* DistanceInputView.swift */,
+				DF09B9B62C231948001FD6D5 /* TimeInputView.swift */,
+				DF09B9B82C2319F0001FD6D5 /* StartView.swift */,
+				DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */,
+				DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */,
+				DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,9 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF09B9BB2C2319FF001FD6D5 /* AvgPaceView.swift in Sources */,
+				DF09B9B52C23193A001FD6D5 /* DistanceInputView.swift in Sources */,
+				DF09B9B32C231836001FD6D5 /* SettingsView.swift in Sources */,
 				09B66EE22C21716C0070BF4A /* ContentView.swift in Sources */,
+				DF09B9B92C2319F0001FD6D5 /* StartView.swift in Sources */,
+				DF09B9B12C2317FF001FD6D5 /* MainView.swift in Sources */,
+				DF09B9BF2C231A1F001FD6D5 /* EndResumeView.swift in Sources */,
 				09B66EE02C21716C0070BF4A /* NC2_RinZeroApp.swift in Sources */,
 				09B66EF52C2175B90070BF4A /* Color.swift in Sources */,
+				DF09B9B72C231948001FD6D5 /* TimeInputView.swift in Sources */,
+				DF09B9BD2C231A0E001FD6D5 /* EndPauseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +353,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -352,7 +384,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
