@@ -9,7 +9,14 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("Frame 18")
+                .resizable()
+                .frame(width: 250, height: 250)
+            Text("START")
+                .foregroundStyle(.white)
+                .font(.system(size: 36, weight: .bold))
+        }
     }
 }
 
