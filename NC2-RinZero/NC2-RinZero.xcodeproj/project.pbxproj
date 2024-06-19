@@ -50,6 +50,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		093EE9AA2C2325BE00B99279 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DF09B9B22C231836001FD6D5 /* SettingsView.swift */,
+				DF09B9B42C23193A001FD6D5 /* DistanceInputView.swift */,
+				DF09B9B62C231948001FD6D5 /* TimeInputView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		093EE9AB2C2325C900B99279 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				DF09B9B82C2319F0001FD6D5 /* StartView.swift */,
+				DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */,
+				DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */,
+				DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
 		09B66ED32C21716B0070BF4A = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +128,8 @@
 			children = (
 				09B66EE12C21716C0070BF4A /* ContentView.swift */,
 				DF09B9B02C2317FF001FD6D5 /* MainView.swift */,
-				DF09B9B22C231836001FD6D5 /* SettingsView.swift */,
-				DF09B9B42C23193A001FD6D5 /* DistanceInputView.swift */,
-				DF09B9B62C231948001FD6D5 /* TimeInputView.swift */,
-				DF09B9B82C2319F0001FD6D5 /* StartView.swift */,
-				DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */,
-				DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */,
-				DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */,
+				093EE9AB2C2325C900B99279 /* Measure */,
+				093EE9AA2C2325BE00B99279 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
