@@ -26,7 +26,8 @@ struct TimeInputView: View {
                     CustomPicker(selectedValue: $selectedMinute, range: minutes, label: "Minute")
                 }
                 Button(action: {
-                    print("")
+                    dismiss()
+                    print("\(selectedHour)h \(selectedMinute)m")
                 }) {
                     Text("Set")
                         .font(.headline)
