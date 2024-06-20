@@ -50,3 +50,7 @@ struct AvgPaceView: View {
         }
     }
 }
+
+#Preview {
+    AvgPaceView(selectedDistance: .constant(0), selectedHour: .constant(0), selectedMinute: .constant(0))
+}
