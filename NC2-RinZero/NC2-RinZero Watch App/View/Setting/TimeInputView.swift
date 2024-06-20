@@ -25,45 +25,23 @@ struct TimeInputView: View {
                     CustomPicker(selectedValue: $selectedHour, range: hours, label: "Hour")
                     CustomPicker(selectedValue: $selectedMinute, range: minutes, label: "Minute")
                 }
-                .frame(height: 120)
-//                Text("Selected time: \(String(format: "%02d", selectedHour)):\(String(format: "%02d", selectedMinute))")
-//                    .font(.headline)
-//                    .padding(.bottom,30)
-                // MARK: - padding보다는 Spacer로 주는 게 좋을 듯 해서 변경했어유 .. ㅎㅎ
-                Spacer()
-                
-                // TODO: - VStack과 padding 값 없애고 Spacer() 사용 ~
-                HStack {
-                    VStack {
-                        Button(action: {
-                            print()
-                        }) {
-                            Image(systemName: "multiply")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                        }
-                        .padding(.trailing, 40)
-                    }
-                    VStack {
-                        Button(action: {
-                            // TODO: - 시간 저장 후, 설정 화면으로 이동
-                            dismiss()
-                            print("\(selectedHour)")
-                            print("\(selectedMinute)")
-                        }) {
-                            Image(systemName: "checkmark")
-                                .font(.headline)
-                                .foregroundColor(.pink)
-                        }
-                    }
-                    .padding(.leading, 40)
+                Button(action: {
+                    print("")
+                }) {
+                    Text("Set")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.clear)
+                        .foregroundStyle(.pink)
+                        .cornerRadius(10)
                 }
             }
+            .padding(.top, 23)
         }
-//            .navigationTitle("Time")
-        }
-        
     }
+    
+        
+}
 
 
 struct CustomPicker: View {
@@ -73,30 +51,24 @@ struct CustomPicker: View {
     
     var body: some View {
         VStack {
-//            Text(label)
-//                .font(.headline)
             Picker("\(label)", selection: $selectedValue) {
                 ForEach(range, id: \.self) { value in
                     Text("\(value)")
                         .font(.system(size: 24))
                         .padding()
-                    // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
-                        .background(value == selectedValue ? Color.clear : Color.clear)
+                        .background(Color.clear)
                         .cornerRadius(8)
                         .foregroundColor(value == selectedValue ? .pink : .primary)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
-                            // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
-                                .stroke(value == selectedValue ? Color.clear : Color.clear, lineWidth: 2)
+                                .stroke(Color.clear, lineWidth: 2)
                         )
                         .tag(value)
                 }
             }
+            .foregroundStyle(.pink)
             .pickerStyle(.wheel)
-            // TODO: - picker 너비 조정 ? 확인하기 ~
-            // MARK: - 높이는 Hour랑 NavigationBackbutton이랑 겹쳐서 조정했어유
             .frame(height: 100)
-            // Picker의 너비와 높이 조정
             .clipped()
         }
     }

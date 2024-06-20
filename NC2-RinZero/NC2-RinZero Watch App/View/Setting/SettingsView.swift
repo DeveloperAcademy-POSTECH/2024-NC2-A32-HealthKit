@@ -56,3 +56,7 @@ struct SettingsView: View {
         .navigationTitle("Settings")
     }
 }
+
+#Preview {
+    SettingsView(selectedDistance: .constant(0), selectedHour: .constant(0), selectedMinute: .constant(0))
+}
