@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TimeInputView: View {
+    @Environment(\.dismiss) var dismiss
+    
 //    @State private var selectedHour = 0
 //    @State private var selectedMinute = 0
     @Binding var selectedHour: Int
@@ -45,6 +47,7 @@ struct TimeInputView: View {
                     VStack {
                         Button(action: {
                             // TODO: - 시간 저장 후, 설정 화면으로 이동
+                            dismiss()
                             print("\(selectedHour)")
                             print("\(selectedMinute)")
                         }) {
@@ -77,11 +80,13 @@ struct CustomPicker: View {
                     Text("\(value)")
                         .font(.system(size: 24))
                         .padding()
+                    // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
                         .background(value == selectedValue ? Color.clear : Color.clear)
                         .cornerRadius(8)
                         .foregroundColor(value == selectedValue ? .pink : .primary)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
+                            // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
                                 .stroke(value == selectedValue ? Color.clear : Color.clear, lineWidth: 2)
                         )
                         .tag(value)

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct AvgPaceView: View {
+    @Binding var selectedDistance: Int
+    @Binding var selectedHour: Int
+    @Binding var selectedMinute: Int
+    
     var body: some View {
         VStack {
             ZStack {
@@ -26,7 +30,7 @@ struct AvgPaceView: View {
             .padding(.bottom, -10)
             HStack {
                 VStack {
-                    Text("5")
+                    Text("\(selectedDistance)")
                         .font(.system(size: 20, weight: .medium))
                     Text("km")
                         .font(.system(size: 12, weight: .regular))
@@ -34,7 +38,7 @@ struct AvgPaceView: View {
                 }
                 Spacer()
                 VStack {
-                    Text("30")
+                    Text("\(selectedHour * 60 + selectedMinute)")
                         .font(.system(size: 20, weight: .medium))
                     Text("min")
                         .font(.system(size: 12, weight: .regular))
@@ -45,10 +49,4 @@ struct AvgPaceView: View {
             .padding(.top, -70)
         }
     }
-}
-
-
-
-#Preview {
-    AvgPaceView()
 }
