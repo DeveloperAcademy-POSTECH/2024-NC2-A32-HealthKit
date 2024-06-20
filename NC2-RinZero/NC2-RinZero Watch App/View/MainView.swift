@@ -32,7 +32,7 @@ struct MainView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150, height: 90)
             }
-            .foregroundStyle(.pink)
+            .foregroundStyle(AppColor.main)
             .padding(.bottom, 60)
         }
     }
