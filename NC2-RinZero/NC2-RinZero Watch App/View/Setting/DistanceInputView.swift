@@ -15,10 +15,8 @@ struct DistanceInputView: View {
     let numbers = Array(1...100)
     
     var body: some View {
-//        NavigationView {
         VStack {
             VStack {
-                VStack {
                     Picker("Distance", selection: $selectedDistance) {
                         ForEach(numbers, id: \.self) { number in
                             Text("\(number)").tag(number)
@@ -28,49 +26,20 @@ struct DistanceInputView: View {
                     }
                     .foregroundStyle(Color.pink)
                     .pickerStyle(.wheel)
-                    .overlay(
-                        VStack {
-                            Spacer().frame(height: 18)
-                            Rectangle()
-                                .fill(.clear)
-                                .stroke(Color.pink, lineWidth: 5)
-                                .cornerRadius(10)
-                        }
-                    )
-                    // Text("Selected number: \(selectedNumber)")
-                    // .padding()
-                }
-                // .navigationTitle("Distance")
-                .frame(width: 180, height: 100)
+                .frame(width: 160, height: 100)
                 .clipped()
-                // .padding(.bottom, 20)
             }
-            HStack {
-                VStack {
-                    Button(action: {
-                        print()
-                    }) {
-                        Image(systemName: "multiply")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.trailing, 40)
-                }
-                VStack {
-                    Button(action: {
-                        // TODO: - 거리 저장 후, 설정 화면으로 이동
-                        dismiss()
-                        print("\(selectedDistance)")
-                    }) {
-                        Image(systemName: "checkmark")
-                            .font(.headline)
-                            .foregroundColor(.pink)
-                    }
-                }
-                .padding(.leading, 40)
+            Button(action: {
+                print("")
+            }) {
+                Text("Set")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.clear)
+                    .foregroundStyle(.pink)
+                    .cornerRadius(10)
             }
-            .padding(.top, 10)
         }
-        .padding(.top, 20)
+        .padding(.top, 10)
     }
 }

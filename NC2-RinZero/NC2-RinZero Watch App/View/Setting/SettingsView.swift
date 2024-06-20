@@ -38,7 +38,7 @@ struct SettingsView: View {
                             Text("Time")
                                 .font(.system(size: 12))
                                 .opacity(0.5)
-                            Text("\(selectedHour)시간 \(selectedMinute)분")
+                            Text("\(selectedHour)H \(selectedMinute)m")
                                 .font(.system(size: 30))
                         }
                         Spacer()
@@ -55,4 +55,8 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
     }
+}
+
+#Preview {
+    SettingsView(selectedDistance: .constant(0), selectedHour: .constant(0), selectedMinute: .constant(0))
 }
