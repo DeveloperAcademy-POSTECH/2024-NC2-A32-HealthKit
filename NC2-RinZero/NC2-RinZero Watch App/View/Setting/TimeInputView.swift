@@ -80,11 +80,13 @@ struct CustomPicker: View {
                     Text("\(value)")
                         .font(.system(size: 24))
                         .padding()
+                    // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
                         .background(value == selectedValue ? Color.clear : Color.clear)
                         .cornerRadius(8)
                         .foregroundColor(value == selectedValue ? .pink : .primary)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
+                            // MARK: - if else가 동일한데 왜 요렇게 썼는가요 ???
                                 .stroke(value == selectedValue ? Color.clear : Color.clear, lineWidth: 2)
                         )
                         .tag(value)
