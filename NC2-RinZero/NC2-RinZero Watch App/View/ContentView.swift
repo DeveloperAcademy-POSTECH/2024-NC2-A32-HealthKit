@@ -9,21 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            MainView()
-                .tabItem {
-                    Label("Main", systemImage: "circle.fill")
-                }
-            StartView()
-                .tabItem {
-                    Label("Start", systemImage: "circle.fill")
-                }
-            EndPauseView()
-                .tabItem {
-                    Label("End Pause", systemImage: "circle.fill")
-                }
+        NavigationStack {
+            TabView {
+                MainView()
+                    .tabItem {
+                        Label("Main", systemImage: "circle.fill")
+                    }
+                StartView()
+                    .tabItem {
+                        Label("Start", systemImage: "circle.fill")
+                    }
+                EndPauseView()
+                    .tabItem {
+                        Label("End Pause", systemImage: "circle.fill")
+                    }
+            }
+            .tabViewStyle(PageTabViewStyle())
         }
-        .tabViewStyle(PageTabViewStyle())
+        
     }
 }
 
