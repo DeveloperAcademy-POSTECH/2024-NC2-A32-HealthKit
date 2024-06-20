@@ -21,7 +21,6 @@
 		DF09B9B92C2319F0001FD6D5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9B82C2319F0001FD6D5 /* StartView.swift */; };
 		DF09B9BB2C2319FF001FD6D5 /* AvgPaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */; };
 		DF09B9BD2C231A0E001FD6D5 /* EndPauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */; };
-		DF09B9BF2C231A1F001FD6D5 /* EndResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +39,6 @@
 		DF09B9B82C2319F0001FD6D5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPaceView.swift; sourceTree = "<group>"; };
 		DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPauseView.swift; sourceTree = "<group>"; };
-		DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndResumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				DF09B9B82C2319F0001FD6D5 /* StartView.swift */,
 				DF09B9BA2C2319FF001FD6D5 /* AvgPaceView.swift */,
 				DF09B9BC2C231A0E001FD6D5 /* EndPauseView.swift */,
-				DF09B9BE2C231A1F001FD6D5 /* EndResumeView.swift */,
 			);
 			path = Measure;
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 				09B66EE22C21716C0070BF4A /* ContentView.swift in Sources */,
 				DF09B9B92C2319F0001FD6D5 /* StartView.swift in Sources */,
 				DF09B9B12C2317FF001FD6D5 /* MainView.swift in Sources */,
-				DF09B9BF2C231A1F001FD6D5 /* EndResumeView.swift in Sources */,
 				09B66EE02C21716C0070BF4A /* NC2_RinZeroApp.swift in Sources */,
 				09B66EF52C2175B90070BF4A /* Color.swift in Sources */,
 				DF09B9B72C231948001FD6D5 /* TimeInputView.swift in Sources */,

@@ -14,8 +14,8 @@ struct StartView: View {
                 .resizable()
                 .frame(width: 250, height: 250)
             Text("START")
-                .foregroundStyle(.white)
-                .font(.system(size: 36, weight: .bold))
+                .foregroundStyle(AppColor.white)
+                .font(.system(size: 40, weight: .bold))
         }
     }
 }
