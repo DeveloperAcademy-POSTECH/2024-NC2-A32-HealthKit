@@ -27,13 +27,10 @@ struct MainView: View {
                 .padding(.trailing, 130)
                 .padding(.bottom, 20)
 
-                Text("Even")
-                    .font(.system(size: 52, weight: .black))
-                    .padding(.bottom, -45)
-                    .padding(.trailing, 38)
-                Text("Pace")
-                    .font(.system(size: 52, weight: .black))
-                    .padding(.leading, 38)
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 90)
             }
             .foregroundStyle(.pink)
             .padding(.bottom, 60)
