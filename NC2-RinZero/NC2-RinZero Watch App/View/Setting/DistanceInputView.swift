@@ -12,7 +12,7 @@ struct DistanceInputView: View {
     
     @Binding var selectedDistance : Int
     
-    let numbers = Array(1...100)
+    let numbers = Array(0...100)
     
     var body: some View {
         VStack {
@@ -30,7 +30,8 @@ struct DistanceInputView: View {
                 .clipped()
             }
             Button(action: {
-                print("")
+                dismiss()
+                print("\($selectedDistance)")
             }) {
                 Text("Set")
                     .font(.headline)
