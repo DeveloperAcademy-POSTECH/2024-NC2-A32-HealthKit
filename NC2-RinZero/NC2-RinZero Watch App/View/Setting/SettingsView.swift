@@ -13,7 +13,7 @@ struct SettingsView: View {
     @Binding var selectedMinute: Int
     
     var body: some View {
-        NavigationStack {
+//        NavigationStack {
             List {
                 NavigationLink(destination: DistanceInputView(selectedDistance: $selectedDistance)) {
                     HStack {
@@ -52,7 +52,7 @@ struct SettingsView: View {
             }
             .listStyle(CarouselListStyle())
             .padding(.top, 10)
-        }
+//        }
         .navigationTitle("Settings")
     }
 }
