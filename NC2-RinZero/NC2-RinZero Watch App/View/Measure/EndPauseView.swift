@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EndPauseView: View {
-    @State var isRunningContinued: Bool = true
+    @State var isRunningContinued: Bool = false
     var body: some View {
         HStack {
             VStack {
