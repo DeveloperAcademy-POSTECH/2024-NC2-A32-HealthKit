@@ -1,8 +1,8 @@
 # 2024-NC2-A32-HealthKit
-## About Us
-|**린**|**제로**|
+## 👭🏻 About Us
+|**린(Rin)**|**제로(Zero)**|
 | :------: |  :------: |
-| | | 
+| <img src = "https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A32-HealthKit/assets/136756125/4397b9a3-ff7f-4ea3-bc57-6d7d641ce0dc" width=200/> | <img src = "https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A32-HealthKit/assets/136756125/aa357550-1175-4062-b9f1-632a99fad9ac" width=200/> | 
 
 ## 🎥 Youtube Link
 (추후 만들어진 유튜브 링크 추가)
